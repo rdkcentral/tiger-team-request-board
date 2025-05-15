@@ -1,5 +1,5 @@
 name: "Request"
-description: "Submit a request to the Tiger Team."
+description: "Submit a request to the RDK Tiger Team."
 projects: ["rdkcentral/68"]
 title: "Request: <Short summary of the request>"
 body:
