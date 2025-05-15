@@ -1,0 +1,12 @@
+name: "Request"
+description: "Submit a request to the Tiger Team."
+projects: ["rdkcentral/68"]
+title: "Request: <Short summary of the request>"
+body:
+- type: textarea
+  attributes:
+    label: "Request"
+    placeholder: "What is the request?"
+  id: request
+  validations:
+    required: true
