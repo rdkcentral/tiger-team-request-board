@@ -2,11 +2,53 @@ name: "Request"
 description: "Submit a request to the Tiger Team."
 projects: ["rdkcentral/68"]
 title: "Request: <Short summary of the request>"
+
 body:
-- type: textarea
-  attributes:
-    label: "Request"
-    placeholder: "What is the request?"
-  id: request
-  validations:
-    required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: Request Summary
+      description: A complete summary of the task.
+      placeholder: "Enter task summary"
+      required: true
+
+  - type: textarea
+    id: expected_result
+    attributes:
+      label: Expected Result
+      description: What is the expected outcome of this task?
+      placeholder: "Describe the expected result"
+      required: true
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type
+      description: What type of task is this?
+      options:
+        - Bug
+        - Task
+        - Feature
+        - Improvement
+      required: true
+
+  - type: dropdown
+    id: urgency
+    attributes:
+      label: Urgency
+      description: How urgent is this task?
+      options:
+        - Low
+        - Medium
+        - High
+      required: true
+
+  - type: textarea
+    id: attachments
+    attributes:
+      label: Attachments or References
+      description: |
+        If you have any screenshots, logs, or related documents, please attach them to this issue after submitting the form.
+        You can also paste links to external files or documents here.
+      placeholder: "Paste links or describe any files you will attach."
+      required: false
