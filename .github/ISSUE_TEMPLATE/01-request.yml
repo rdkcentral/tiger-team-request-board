@@ -26,10 +26,9 @@ body:
       label: Type
       description: What type of task is this?
       options:
-        - Bug
-        - Task
-        - Feature
-        - Improvement
+        - Development
+        - Design
+        - QA
       required: true
 
   - type: dropdown
